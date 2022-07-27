@@ -33,7 +33,6 @@ public class KruskalMazeCarver extends MazeCarver {
 
     @Override
     protected Set<Wall> chooseWallsToRemove(Set<Wall> walls) {
-        // Hint: you'll probably need to include something like the following:
         Set<EdgeWithData<Room, Wall>> edges = new HashSet<>();
 
         for (Wall w : walls) {
