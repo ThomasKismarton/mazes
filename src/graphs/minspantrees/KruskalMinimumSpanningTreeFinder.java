@@ -19,15 +19,10 @@ public class KruskalMinimumSpanningTreeFinder<G extends KruskalGraph<V, E>, V, E
     implements MinimumSpanningTreeFinder<G, V, E> {
 
     protected DisjointSets<V> createDisjointSets() {
-        //return new QuickFindDisjointSets<>();
-        /*
-        Disable the line above and enable the one below after you've finished implementing
-        your `UnionBySizeCompressingDisjointSets`.
-         */
         return new UnionBySizeCompressingDisjointSets<>();
 
         /*
-        Otherwise, do not change this method.
+        Do not change this method.
         We override this during grading to test your code using our correct implementation so that
         you don't lose extra points if your implementation is buggy.
          */
